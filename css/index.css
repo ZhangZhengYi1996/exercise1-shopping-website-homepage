@@ -1,0 +1,686 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*顶部*/
+.header {
+    width: 100%;
+    height: 40px;
+    background: #f3f5f7;
+    position: relative;
+}
+
+.header .innerheader {
+    margin: 0 150px;
+}
+
+.header .innerheader .left a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    margin: 0 10px;
+    line-height: 40px;
+    float: left;
+}
+
+.header .innerheader .left a:hover {
+    color: red;
+}
+
+.header .innerheader .right p {
+    float: right;
+    margin-right: 30px;
+    line-height: 40px;
+    /* z-index: 10; */
+
+
+}
+
+.header .innerheader .right .list {
+    position: relative;
+    float: right;
+}
+
+.header .innerheader .right .list ul {
+    width: 85px;
+    height: 80px;
+    background: white;
+    list-style: none;
+    border: 1px solid gray;
+    position: absolute;
+    top: 40px;
+    z-index: 5;
+    display: none;
+
+
+}
+
+.header .innerheader .right .list p img {
+    margin-left: 5px;
+}
+
+.header .innerheader .right p:hover {
+    color: red;
+    cursor: pointer;
+
+
+}
+
+.header .innerheader .right .list ul li:hover {
+    background: #cdd0d4;
+
+}
+
+.header .innerheader .right .list:hover ul {
+    display: block;
+}
+
+/*logo*/
+.logo {
+    width: 100%;
+    height: 100px;
+    background: #f3f5f7;
+    position: relative;
+}
+
+.logo .innerlogo {
+    margin: 0 150px;
+    border-top: 1px solid grey;
+}
+
+.logo .innerlogo .left img {
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+}
+
+
+.logo .innerlogo .middle .text {
+    width: 350px;
+    height: 20px;
+    position: absolute;
+    left: 450px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.logo .innerlogo .middle .button {
+    width: 60px;
+    height: 20px;
+    background: black;
+    border: 2px black solid;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    position: absolute;
+    left: 800px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.logo .innerlogo .middle .button:hover,
+.logo .innerlogo .left img:hover {
+    cursor: pointer;
+}
+
+.logo .innerlogo .right {
+    width: 160px;
+    height: 24px;
+    background: red;
+    position: absolute;
+    right: 150px;
+    top: 50%;
+    margin-top: -12px;
+}
+
+.logo .innerlogo .right span {
+    line-height: 24px;
+    margin: 5px 5px;
+    font-size: 15px;
+    color: white;
+}
+
+.logo .innerlogo .cart {
+    width: 280px;
+    height: 400px;
+    border: gray 1px solid;
+    background: white;
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    margin-top: 12px;
+    overflow: scroll;
+    display: none;
+    z-index: 100;
+}
+
+.logo .innerlogo .cart div {
+    margin: 10px 10px;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    border-top: 1px solid gray
+}
+
+.logo .innerlogo .cart div:hover {
+    background: #f3f5f7
+}
+
+.logo .innerlogo .cart div span:hover {
+    color: red;
+}
+
+.logo .innerlogo .cart div img {
+
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+
+}
+
+.logo .innerlogo .cart div span {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 60px;
+}
+
+/* nav导航栏 */
+.nav {
+    width: 100%;
+    height: 30px;
+    background: #07111b;
+
+}
+
+.nav .innernav {
+    width: 600px;
+    margin-left: 300px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+    margin: 0 20px;
+}
+
+.nav a:hover {
+    color: red;
+}
+
+/* banner-left */
+.banner .left {
+    width: 150px;
+    height: 455px;
+    background: red;
+    opacity: 0.8;
+    position: absolute;
+    left: 150px;
+    top: 135px;
+
+}
+
+.banner .left .head {
+
+    margin-top: 5px;
+}
+
+.banner .left .head a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.banner .left div {
+    height: 30px;
+    width: 140px;
+    padding-left: 10px;
+    line-height: 30px;
+    color: white;
+    position: relative;
+}
+
+.banner .left .classify img {
+    position: absolute;
+    right: 10px;
+
+    top: 8px;
+    transform: rotate(270deg);
+}
+
+.banner .subleft .main {
+    width: 550px;
+    height: 450px;
+    border: 1px solid gray;
+    position: absolute;
+    left: 300px;
+    top: 170px;
+    display: none;
+    background: white;
+    z-index: 999;
+}
+
+.banner .subleft .main .content {
+    height: 36px;
+    width: 550px;
+    margin: 20px 15px;
+}
+
+.banner .subleft .main .content b,
+.banner .subleft .main .content span {
+    padding-right: 15px;
+}
+
+.banner .subleft .main .content .atag {
+    display: inline;
+
+    height: 35px;
+
+    /* width: 400px;
+    height:30px; */
+}
+
+.banner .subleft .main .content .atag a {
+    text-decoration: none;
+    color: gray;
+    padding: 0 10px;
+}
+
+.banner .subleft .main .content .atag a:hover {
+    color: red;
+}
+
+/* 轮播图 banner-middle */
+.banner .middle {
+    width: 610px;
+    height: 410px;
+    overflow: hidden;
+    position: relative;
+    left: 300px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* .banner .middle .img{
+    width: 600px;
+    height: 410px;
+    overflow: hidden;
+    position: relative;
+    left: 300px;
+    margin-top:10px;
+    margin-left: 10px;
+} */
+.banner .middle .img img {
+    width: 610px;
+    height: 410px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/* banner-arrow */
+.banner .middle .arrow img {
+    width: 20px;
+    height: 40px;
+    background: 0%;
+    border: 0ch;
+}
+
+.banner .middle .arrow img:hover {
+    background: gray;
+}
+
+.banner .middle .arrow .left {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.banner .middle .arrow .right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -20px;
+}
+
+/* banner-dots */
+.banner .middle .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -108px;
+
+}
+
+
+.banner .middle .dots p {
+    width: 10px;
+    height: 10px;
+    background: gray;
+    border: white 1px solid;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.banner .middle .dots .pdot {
+    background: white;
+    border: 1px solid gray;
+}
+
+
+/* banner-right */
+.banner .right {
+    width: 200px;
+    height: 410px;
+    position: absolute;
+    border: 1px solid gray;
+    right: 130px;
+    top: 180px;
+}
+
+/* .banner .right .top {
+    border-bottom: gray 1px solid;
+} */
+.banner .right .top p {
+    float: left;
+    margin: 10px;
+    color: red;
+}
+
+.banner .right .top .more {
+    float: right;
+    margin: 10px;
+    text-decoration: none;
+    color: gray;
+}
+
+.banner .right .top .link {
+    display: block;
+    margin: 5px 0px 10px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+
+.banner .right .top .link:hover {
+    color: red;
+}
+
+.banner .right .mid .logo {
+    width: 49px;
+    height: 50px;
+    float: left;
+    border: gray 0.5px solid;
+    background: 0%;
+}
+
+.banner .right .mid .logo:hover {
+    cursor: pointer;
+}
+
+.banner .right .mid .logo img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 5px auto;
+
+}
+
+.banner .right .mid .logo p {
+    color: gray;
+    font-size: 10px;
+    text-align: center;
+}
+
+.banner .right .bottom img {
+    width: 200px;
+    height: 95px;
+}
+
+.banner .right .bottom img:hover {
+    cursor: pointer;
+}
+
+/* floor */
+.floor {
+    margin: 25px 150px;
+}
+
+.floor .innerfloor .head .logo,
+.floor .innerfloor2 .head .logo {
+    color: white;
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    float: left;
+    /* display: inline-block; */
+}
+
+.floor .innerfloor .head p,
+.floor .innerfloor2 .head p {
+    margin-left: 40px;
+    /* display: inline-block; */
+    float: left;
+}
+
+.floor .innerfloor hr,
+.floor .innerfloor2 hr {
+    margin: 15px 0px;
+    background-color: red;
+    border: none;
+    height: 1px;
+}
+
+.floor .innerfloor .head .innernav,
+.floor .innerfloor2 .head .innernav {
+    float: right;
+    margin-right: 20px;
+    color: gray;
+}
+
+.floor .innerfloor .head .innernav a,
+.floor .innerfloor2 .head .innernav a {
+    color: gray;
+    text-decoration: none;
+}
+
+.floor .head {
+    position: relative;
+}
+
+.floor .innerfloor .head .navarrow .one{
+    position: absolute;
+    right: 140px;
+    top: 29px;
+}
+.floor .innerfloor2 .head .navarrow .one {
+    position: absolute;
+    right: 200px;
+    top: 29px;
+}
+
+
+.floor .innerfloor .head .navarrow .two {
+    position: absolute;
+    right: 80px;
+    top: 29px;
+    display: none;
+}
+.floor .innerfloor2 .head .navarrow .two {
+    position: absolute;
+    right: 130px;
+    top: 29px;
+    display: none;
+}
+
+.floor .innerfloor .head .navarrow .three {
+    position: absolute;
+    right: 20px;
+    top: 29px;
+    display: none;
+}
+
+.floor .innerfloor2 .head .navarrow .three{
+    position: absolute;
+    right: 40px;
+    top: 29px;
+    display: none;
+}
+
+.floor .innerfloor .main,
+.floor .innerfloor2 .main {
+    /* background: red; */
+    margin: 0 auto;
+    width: 900px;
+    height: 350px;
+
+    position: relative;
+}
+
+.floor .innerfloor .main .one,
+.floor .innerfloor2 .main .one {
+    position: absolute;
+    top: 0;
+}
+
+.floor .innerfloor .main .pic,
+.floor .innerfloor2 .main .pic {
+    width: 145px;
+
+    display: inline-block;
+    /* background: red; */
+}
+
+.floor .innerfloor .main .pic:hover,
+.floor .innerfloor2 .main .pic:hover {
+    border-left: 0.5px solid gray;
+    border-right: 0.5px solid gray;
+    border-bottom: 0.5px solid gray;
+}
+
+.floor .innerfloor .main .pic img,
+.floor .innerfloor2 .main .pic img {
+    widows: 80px;
+    height: 80px;
+    display: block;
+    margin: 20px auto;
+}
+
+.floor .innerfloor .main .pic img:hover,
+.floor .innerfloor2 .main .pic img:hover {
+    cursor: pointer;
+}
+
+.floor .innerfloor .main .pic a,
+.floor .innerfloor2 .main .pic a {
+    display: block;
+    text-decoration: none;
+    color: black
+}
+
+.floor .innerfloor .main .pic a:hover,
+.floor .innerfloor2 .main .pic a:hover {
+    color: red;
+}
+
+.floor .innerfloor .main .pic p,
+.floor .innerfloor2 .main .pic p {
+    color: red;
+}
+
+.floor .innerfloor .main .pic a,
+.floor .innerfloor .main .pic p,
+.floor .innerfloor2 .main .pic a,
+.floor .innerfloor2 .main .pic p {
+    text-align: center;
+}
+
+/* link */
+.footlink {
+    margin: 0px 150px;
+    /* height: 50px;
+    width: auto; */
+    padding-top: 20px;
+    display: flex;
+    border-top: 1px solid gray;
+}
+.footlink dl{
+    height: 100px;
+    display: inline-block;
+    flex: 1;
+    margin-left: 15px;
+}
+.footlink dl dt{
+    font-weight: bold;
+}
+.footlink dl dd{
+    color: gray;
+    font-size: 15px;
+    display: inline-block;
+    padding: 5px 5px 5px 0px;
+}
+.footlink dl dd:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 100px;
+    background: #f3f5f7;
+    color: gray;
+    
+}
+.footer .footnav,.footer .copyright{
+    text-align: center;
+    padding-top: 20px;
+}
+.footer .footnav span{
+    margin: 0 5px;
+}
+.footer .footnav span:hover{
+    color:#07111b;
+    cursor: pointer;
+}
+
+.rightNav {
+    height: 160px;
+    width: 30px;
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    margin-top: -80px;
+    
+}
+.rightNav .r-nav{
+    position: relative;
+}
+.rightNav .r-nav img{
+    height: 30px;
+    width: 30px;
+    background: #b7bbbf;
+   
+}
+.rightNav .r-nav div{
+    height: 30px;
+    width: 60px;
+    background: #71777d;
+    position: absolute;
+    right: 30px;
+    margin-top: -34px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 10px;
+    display: none;
+    
+}
